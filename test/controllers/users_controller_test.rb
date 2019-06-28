@@ -5,5 +5,10 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get signup_url
     assert_response :success
   end
+  
+  test "should get show" do
+    get user_path(1)
+    assert_response :success
+  end
 
 end
